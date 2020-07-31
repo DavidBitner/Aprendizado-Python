@@ -1,10 +1,17 @@
-valor = 0
-tupla = list
+a = int(input('Digite um numero: '))
+b = int(input('Digite outro numero:'))
+c = int(input('Digite mais um numero: '))
+d = int(input('Digite o ultimo numero: '))
 
-for c in range(0, 4):
-    valor = int(input(f'Digite o {c + 1}º numero: '))
+tupla = (a, b, c, d)
 
-print(tupla)
+pares = 0
 
+for c in tupla:
+    if c % 2 == 0:
+        pares += 1
 
-INCOMPLETO
+print(f'Você digitou os valores {tupla}')
+print(f'O numero 9 aparece {tupla.count(9)} vezes')
+print(f'O valor 3 apareceu na {tupla.index(3) + 1}º posição')
+print(f'Os valores pares digitados foram {pares}')
