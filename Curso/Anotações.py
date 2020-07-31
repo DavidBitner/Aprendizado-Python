@@ -96,6 +96,33 @@ while not condição:
 variavel = false
 while not variavel: = enquanto a variavel não se tornar verdadeira, o laço continuará rodando
 
+exemplo = () = Tupla
+exemplo = [] = Lista
+exemplo = {} = Dicionário
+
+Importante: Tuplas são imutáveis
+exemplo = ('Primeiro', 'Segundo', 'Terceiro', 'Quarto')
+print(exemplo[2]) = printar dentro da tupla o que estiver alocado na posição 3
+print(exemplo[0:2]) = printar dentro da tupla o que estiver alocado entre as posições 1 e 2
+print(exemplo[1:]) = printar dentro da tupla o que estiver alocado a partir da posição 2 até o final
+print(exemplo[-1]) = printar dentro da tupla o ultimo valor existente nela
+print(sorted(exemplo)) = Printar a tupla completa em ordem alfabetica
+len(exemplo) = Mostrar a quantidade de valores alocados dentro da tupla "exemplo"
+
+
+for c in exemplo:
+    print(c)
+= Printar tudo que estiver dentro da tupla, um por um
+
+for c in range(0, len(exemplo)): 
+    print(exemplo[c])    
+= Mostrar o que estiver dentro da tupla "Exemplo" desde a posição 0
+
+a = (2, 4, 6) = Primeira tupla
+b = (1, 4, 5, 7) = Segunda tupla
+c = a + b = Terceira tupla composta das duas primeiras tuplas
+print(c.count(4)) = Mostrar quantas vezes o numero 4 aparece dentro da tupla "c"
+print(c.index(7)) = Mostrar em que posição dentro da tupla o "7" se encontra
 
 """
 
