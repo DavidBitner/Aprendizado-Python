@@ -128,6 +128,11 @@ tupla = (randint(0, 10), randint(0, 10)) = Randomizar dois numeros e colocalos n
 
 max(tupla) = Maior numero dentro de uma sequencia de numeros
 min(tupla) = Menor numero dentro de uma sequencia de numeros
+
+tupla = (str(input('Digite aqui')), str(input('Digite aqui')))
+= Popular uma tupla com entradas do usuário
+
+
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
