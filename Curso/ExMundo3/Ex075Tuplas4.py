@@ -1,9 +1,7 @@
-a = int(input('Digite um numero: '))
-b = int(input('Digite outro numero:'))
-c = int(input('Digite mais um numero: '))
-d = int(input('Digite o ultimo numero: '))
-
-tupla = (a, b, c, d)
+tupla = (int(input('Digite um numero: ')),
+int(input('Digite outro numero: ')),
+int(input('Digite mais um numero: ')),
+int(input('Digite o ultimo numero: ')))
 
 pares = 0
 
@@ -11,7 +9,7 @@ for c in tupla:
     if c % 2 == 0:
         pares += 1
 
-print(f'Você digitou os valores {tupla}')
+print(f'\nVocê digitou os valores {tupla}')
 print(f'O numero 9 aparece {tupla.count(9)} vezes')
 
 if 3 in tupla:
