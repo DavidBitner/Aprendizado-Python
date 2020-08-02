@@ -97,6 +97,7 @@ while not condição:
 variavel = false
 while not variavel: = enquanto a variavel não se tornar verdadeira, o laço continuará rodando
 
+
 exemplo = () = Tupla
 exemplo = [] = Lista
 exemplo = {} = Dicionário
@@ -134,6 +135,28 @@ tupla = (str(input('Digite aqui')), str(input('Digite aqui')))
 = Popular uma tupla com entradas do usuário
 
 
+lista.append('Exemplo') = Adicionar um valor a lista
+lista.insert(0, 'Exemplo') = Adicionar a primeira posição da lista o valor "Exemplo"
+del lista[3] = Deletar da lista o quarto valor dela
+lista.pop[3] = Deletar da lista o quarto valor dela
+lista.pop() = Deletar o ultimo valor da lista
+lista.remove('Exemplo') = Deletar da lista o valor "Exemplo"
+lista = list(range(4, 11)) = Criar uma lista com os valor de 4 até 10
+lista.sort() = Alterar a lista para que os valores fiquem na ordem
+lista.sort(reverse=True) = Alterar a lista para que os valores fiquem na ordem, de trás para frente
+len(lista) = Mostrar o numero de valores dentro da lista
+
+for c, v in enumerate(lista):
+    print(f'Na posição {c} encontrei o valor {v}!')
+= mostrar a lista e a posição do valor dentro da lista
+
+for c in range(0,5):
+    lista.append(int(input('Digite um valor:')))
+= Usuário popular uma lista com cinco valores
+
+listaA = [1, 2, 3, 4] = Lista A
+listaB = listaA = Conexão entre lista A e B
+listaB = listaA[:] = Cópia da lista A
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
