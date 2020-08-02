@@ -124,6 +124,10 @@ c = a + b = Terceira tupla composta das duas primeiras tuplas
 print(c.count(4)) = Mostrar quantas vezes o numero 4 aparece dentro da tupla "c"
 print(c.index(7)) = Mostrar em que posição dentro da tupla o "7" se encontra
 
+tupla = (randint(0, 10), randint(0, 10)) = Randomizar dois numeros e colocalos numa tupla
+
+max(tupla) = Maior numero dentro de uma sequencia de numeros
+min(tupla) = Menor numero dentro de uma sequencia de numeros
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
