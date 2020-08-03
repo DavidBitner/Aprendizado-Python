@@ -162,3 +162,11 @@ listaB = listaA[:] = Cópia da lista A
 print('\033[4;30;45mOlá, Mundo!\033[m')
 print('Olá {}{}{}!!!'.format('\033[4;34m', nome, '\033[m'))
 
+'''while True:
+    continuar = str(input('Quer continuar? [S/N] ')).strip()
+
+    if continuar in 'SsNn':
+        break
+
+if continuar in 'Nn':
+    break'''
