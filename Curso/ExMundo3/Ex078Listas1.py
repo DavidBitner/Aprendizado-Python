@@ -5,7 +5,7 @@ maior = 0
 menor = 0
 
 for c in range(0, 5):
-    lista.append(int(input(f'Digite o {c + 1}º valor: ')))
+    lista.append(int(input(f'Digite um valor para a posição {c}: ')))
 
 print(f'Você digitou os valores: {lista}')
 
@@ -25,7 +25,7 @@ for c, valor in enumerate(lista):
     elif valor == maior:
         posicaoMaior.append(c)
     
-    if menor == -1:
+    if menor == 0:
         menor = valor
         posicaoMenor.append(c)
     elif valor < menor:
@@ -38,15 +38,15 @@ for c, valor in enumerate(lista):
 if len(posicaoMaior) > 1:
     print(f'O maior valor digitado foi o {maior} e ele se encontra nas posições ', end='')
     for valores in posicaoMaior:
-        print(valores + 1, end=' ')
+        print(valores, end=' ')
     print()
 else:
-    print(f'O maior valor digitado foi o {maior} e ele se encontra na posição {posicaoMenor[0]}')
+    print(f'O maior valor digitado foi o {maior} e ele se encontra na posição {posicaoMaior[0]}')
 
 
 if len(posicaoMenor) > 1:
-    print(f'O menor valor digitado foi o {menor} e ele se encontra nas posições ', end= '')
+    print(f'O menor valor digitado foi o {menor} e ele se encontra nas posições ', end='')
     for valores in posicaoMenor:
-        print(valores + 1, end= ' ')
+        print(valores, end=' ')
 else:
     print(f'O menor valor digitado foi o {menor} e ele se encontra na posição {posicaoMenor[0]}')
