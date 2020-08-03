@@ -36,7 +36,7 @@ for c, valor in enumerate(lista):
         posicaoMenor.append(c)
     
 if len(posicaoMaior) > 1:
-    print(f'O maior valor digitado foi o {maior} e ele se encontra nas posições ', end= '')
+    print(f'O maior valor digitado foi o {maior} e ele se encontra nas posições ', end='')
     for valores in posicaoMaior:
         print(valores + 1, end=' ')
     print()
