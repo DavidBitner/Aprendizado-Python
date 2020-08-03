@@ -1,7 +1,7 @@
-expressao = str(input('Digite a expressão: '))
 abreParenteses = 0
 fechaParenteses = 0
 primeiro = False
+expressao = str(input('Digite a expressão: '))
 
 for c in expressao:
     if c in '(':
