@@ -157,6 +157,20 @@ for c in range(0,5):
 listaA = [1, 2, 3, 4] = Lista A
 listaB = listaA = Conexão entre lista A e B
 listaB = listaA[:] = Cópia da lista A
+
+pessoas = [['Pedro',25], ['Maria',19], ['João',32]] = Listas dentro de uma lista
+print(pessoas[0][0]) = Printar Pedro, ou, o primeiro valor da primeira lista dentro da lista principal
+
+for dados in pessoas:
+    print(f'{p[0] tem {p[1]} anos de idade.')
+
+for p in pessoas:
+    if p[1] >= 18:
+        print(f'{p[0]} é maior de idade.')
+    else:
+        print(f'{p[0]} é menor de idade.')
+
+
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
