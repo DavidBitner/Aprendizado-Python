@@ -9,5 +9,5 @@ print('-=' * 40)
 
 for cont3 in range(0, 3):
     for cont4 in range(0, 3):
-        print(f'[  {matriz[cont3][cont4]}  ]', end=' ')
+        print(f'[  {matriz[cont3][cont4]:^5}  ]', end=' ')
     print()
