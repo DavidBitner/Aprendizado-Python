@@ -8,5 +8,8 @@ for c in range(0, 7):
     else:
         numeros[1].append(n)
 
+numeros[0].sort()
+numeros[1].sort()
+
 print(f'Os valores pares digitados foram: {numeros[0]}')
 print(f'Os valores impares digitados foram: {numeros[1]}')
