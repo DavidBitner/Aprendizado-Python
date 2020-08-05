@@ -171,6 +171,20 @@ for p in pessoas:
         print(f'{p[0]} é menor de idade.')
 
 
+dicionario = {'nome': 'Pedro', 'idade': 25} = Declarar como nome e idade os campos do dicionário
+print(dicionario['nome']) = Mostrar todos os valores dentro das posições nome
+dicionario['sexo']= 'm' = Criar dentro do dicionario um novo campo chamado sexo
+print(dicionario.values()) = Mostrar todos os itens dentro do dicionário, Pedro, 25 e M
+print(dicionario.keys()) = Mostrar todas as chaves dentro do dicionário, nome, idade e sexo
+print(dicionario.items()) = Mostrar tudo dentro do dicionário, Nome Pedro, Idade 25 e sexo m
+
+for k, v in dicionario.items():
+    print(f'O {k} é {v}')
+= O nome é Pedro
+O idade é 25
+O sexo é m
+
+
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
