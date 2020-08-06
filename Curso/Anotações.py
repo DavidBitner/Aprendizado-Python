@@ -177,12 +177,24 @@ dicionario['sexo']= 'm' = Criar dentro do dicionario um novo campo chamado sexo
 print(dicionario.values()) = Mostrar todos os itens dentro do dicionário, Pedro, 25 e M
 print(dicionario.keys()) = Mostrar todas as chaves dentro do dicionário, nome, idade e sexo
 print(dicionario.items()) = Mostrar tudo dentro do dicionário, Nome Pedro, Idade 25 e sexo m
+dicionario['m'] = str(input('Sexo: '))
+pessoas.append(dicionario.copy())
 
 for k, v in dicionario.items():
     print(f'O {k} é {v}')
 = O nome é Pedro
 O idade é 25
 O sexo é m
+
+for c in dicionario.keys():
+    print(c)
+= nome idade sexo
+
+for c in dicionario.values():
+    print(c)
+= pedro 25 m
+
+
 
 
 """
