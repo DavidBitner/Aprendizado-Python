@@ -197,11 +197,25 @@ for c in dicionario.values():
 for c in pessoas:
     if c['sexo'] in 'Ff':
         print(c['nome'], end=' ')
+= Pegar o dicionário "c" dentro da lista "pessoas" e usa-lo em um if
 
 for c in pessoas:
     if c['idade'] > media:
         for k, v in c.items():
             print(f'{k} = {v}', end='; ')
+= Pegar o dicionário "c" dentro da lista "pessoas" e usa-lo em um if e um for
+
+for i, v in enumerate(time):
+    print(f'{i:>4} ', end='')
+    for c in v.values():
+        print(f'{str(d):<15', end='')
+    print()
+= Pegar o indice "i" e os dicionarios "v" na lista "time" e usa-los em um espaço formatado
+
+for i in jogador.keys():
+    print(f'{i:<15}', end='')
+print()
+= Pegar as chaves do dicionário "jogado" e coloca-las num print com o "i"
 
 
 
