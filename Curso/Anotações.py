@@ -198,6 +198,10 @@ for c in pessoas:
     if c['sexo'] in 'Ff':
         print(c['nome'], end=' ')
 
+for c in pessoas:
+    if c['idade'] > media:
+        for k, v in c.items():
+            print(f'{k} = {v}', end='; ')
 
 
 
