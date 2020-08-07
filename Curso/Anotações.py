@@ -194,6 +194,10 @@ for c in dicionario.values():
     print(c)
 = pedro 25 m
 
+for c in pessoas:
+    if c['sexo'] in 'Ff':
+        print(c['nome'], end=' ')
+
 
 
 
