@@ -9,6 +9,5 @@ elif pessoas['media'] < 7:
 else:
     pessoas['situacao'] = 'Aprovado'
 
-print(f'Nome é igual a {pessoas["nome"]}')
-print(f'Média é igual a {pessoas["media"]:.1f}')
-print(f'Situação é igual a {pessoas["situacao"]}')
+for k, v in pessoas.items():
+    print(f'{k} é igual a {v}')
