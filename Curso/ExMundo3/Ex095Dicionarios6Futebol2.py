@@ -29,8 +29,8 @@ while True:
 print('_' * 70)
 
 print(f'{"cod":<3} {"nome":<15} {"gols":<20} {"total":<5}')
-for c1 in range(0, len(jogadores)):
-    print(f'{c1:>3} {jogadores[c1]["nome"]:<15} {str(jogadores[c1]["gols"]):<20} {jogadores[c1]["total"]:<5}')
+for c in range(0, len(jogadores)):
+    print(f'{c:>3} {jogadores[c]["nome"]:<15} {str(jogadores[c]["gols"]):<20} {jogadores[c]["total"]:<5}')
 
 print('_' * 70)
 
