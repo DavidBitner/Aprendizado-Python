@@ -215,7 +215,24 @@ for i, v in enumerate(time):
 for i in jogador.keys():
     print(f'{i:<15}', end='')
 print()
-= Pegar as chaves do dicionário "jogado" e coloca-las num print com o "i"
+= Pegar as chaves do dicionário "jogador" e coloca-las num print com o "i"
+
+def exemplo(): = Definir a função "exemplo"
+
+def mensagem(msg):
+    print(msg)
+mensagem('EXEMPLO')
+= Definir como função "mensagem", definir como parâmetro dentro da função a palavra "msg"
+
+def soma(a, b):
+    s = a + b
+    print(s)
+= Definir uma função como "soma", tendo dois parâmetros de entrada
+
+soma(b=4, a=5) = Definir como parÂmetros da função soma, "b" e "a"
+
+def contador(*num): = Definir a função "contador", tendo como parâmentro a palavra "num" e o asterisco para simbolizar que não se sabe quantas entradas serão depositadas na função
+
 
 
 
