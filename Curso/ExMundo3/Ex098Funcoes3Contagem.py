@@ -12,7 +12,7 @@ def contagem(inicio, fim, passo):
 
     for c in range(inicio, fim, passo):
         print(c, end=' ')
-        #sleep(0.2)
+        sleep(0.3)
     print('FIM!')
     print('-=' * 20)
 
