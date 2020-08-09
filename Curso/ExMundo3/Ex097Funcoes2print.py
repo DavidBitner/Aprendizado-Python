@@ -5,5 +5,4 @@ def escreva(txt):
 
 
 # Programa principal
-t = str(input('Digite o texto: '))
-escreva(t)
+escreva(str(input('Digite o texto: ')))
