@@ -1,9 +1,9 @@
 def notas(*nota, sit=False):
     """
-    Dicionario com as informações de um aluno
-    :param nota: Notas do aluno
-    :param sit: Parâmetro para apontar se o dicionário terá a situação do aluno
-    :return: Um dicionário com a quantidade de notas do aluno, a maior nota, a menor, a média, e caso necessário a situação do aluno.
+    Função para analisar notas e situações de vários alunos.
+    :param nota: Uma ou mais notas dos alunos (aceita várias)
+    :param sit: Valor opcional, indicando se deve ou não adicionar a situação
+    :return: Dicionário com várias informações sobre a situação da turma.
     """
     dicionario = dict()
     dicionario['total'] = len(nota)
