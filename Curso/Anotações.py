@@ -233,6 +233,8 @@ soma(b=4, a=5) = Definir como parÂmetros da função soma, "b" e "a"
 
 def contador(*num): = Definir a função "contador", tendo como parâmentro a palavra "num" e o asterisco para simbolizar que não se sabe quantas entradas serão depositadas na função
 
+global exemplo = Dentro da função, especificar que a variável a ser usada será a do programa principal
+
 
 
 
