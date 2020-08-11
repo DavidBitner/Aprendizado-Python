@@ -11,3 +11,4 @@ def leiaInt(numero):
 
 # Programa Principal
 n = leiaInt('Digite um n: ')
+print(f'Você acabou de digitar o numero {n}')
