@@ -1,7 +1,7 @@
 def leiaInt(numero):
     while True:
         numero = input('Digite um n: ')
-        if numero in '0123456789':
+        if numero.isnumeric():
             break
         else:
             print('ERRO! Digite um número inteiro válido.')
