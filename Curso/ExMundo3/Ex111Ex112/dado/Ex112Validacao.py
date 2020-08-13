@@ -1,10 +1,12 @@
-def leiaDinheiro(numero):
+def leiaDinheiro(msg):
     while True:
-        numero = input('Digite o preço: R$')
-        if numero.isnumeric():
-            numero = int(numero)
-            break
+        numero = str(input(msg)).strip()
+        if numero.isalpha() or numero == '':
+            print('ERRO! Digite um preço válido.')
         else:
-            print('ERRO! Digite um número inteiro válido.')
+            if ',' in numero:
+                numero = numero.replace(',', '.')
+            numero = float(numero)
+            break
 
     return numero
