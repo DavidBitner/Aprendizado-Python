@@ -4,13 +4,13 @@ def linha():
 
 def resumo(n, mais, menos):
     linha()
-    print(f'{"RESUMO DO VALOR":^30}')
+    print('RESUMO DO VALOR'.center(30))
     linha()
-    print(f'Preço analisado:    {moeda(n)}')
-    print(f'Dobro do preço:     {moeda(dobro(n))}')
-    print(f'Metade do preço:    {moeda(metade(n))}')
-    print(f'{mais}% de aumento:     {moeda(aumentar(n, mais))}')
-    print(f'{menos}% de redução:     {moeda(diminuir(n, menos))}')
+    print(f'Preço analisado: \t{moeda(n)}')
+    print(f'Dobro do preço: \t{moeda(dobro(n))}')
+    print(f'Metade do preço: \t{moeda(metade(n))}')
+    print(f'{mais}% de aumento: \t{moeda(aumentar(n, mais))}')
+    print(f'{menos}% de redução: \t{moeda(diminuir(n, menos))}')
     linha()
 
 
@@ -34,6 +34,6 @@ def diminuir(n, a):
     return r
 
 
-def moeda(n):
-    r = f'R${n:.2f}'
+def moeda(n, m='R$'):
+    r = f'{m}{n:.2f}'.replace('.', ',')
     return r
