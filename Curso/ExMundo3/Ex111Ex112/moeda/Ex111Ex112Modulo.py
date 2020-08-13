@@ -34,6 +34,6 @@ def diminuir(n, a):
     return r
 
 
-def moeda(n):
-    r = f'R${n:.2f}'
+def moeda(n, m='R$'):
+    r = f'{m}{n:.2f}'.replace('.', ',')
     return r
