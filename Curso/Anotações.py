@@ -15,6 +15,7 @@
  {:.3f} três casas decimais
  , end=' ' finaliza sem pular linha
  \n quebra linha
+ \t tabulação
  Porcentagens podem ser calculadas da seguinte forma: valor * porcentagem / 100
  Para conseguir o valor menos a porcentagem: valor - (valor * porcentagem / 100)
 
