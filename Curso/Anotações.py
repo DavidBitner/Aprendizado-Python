@@ -238,6 +238,23 @@ def contador(*num): = Definir a função "contador", tendo como parâmentro a pa
 global exemplo = Dentro da função, especificar que a variável a ser usada será a do programa principal
 
 
+try:
+    print(a)
+except:
+    print(erro)
+else:
+    print(c)
+finally:
+    print(d)
+= try = Tentar rodar uma linha de comandos "a". 
+except = Caso dê erro ao tentar executar as linhas dentro do comando try, as linhas de comando do bloco except "b" acontecem. 
+else = Caso os comandos do bloco try funcionem, a continuação do programa acontecera no bloco "c" de else.
+finally = Fazer um bloco de comandos ser executado, depois de tudo, independente do resto do programa
+
+except TypeError:
+except (ValueError, OSError):
+= Criar um bloco de comandos baseado em exceções especificas
+
 
 
 """
