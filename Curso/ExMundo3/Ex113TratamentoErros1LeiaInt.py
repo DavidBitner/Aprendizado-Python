@@ -4,20 +4,20 @@ def leiaInt(txt):
             numero = int(input(txt))
         except ValueError:
             print('ERRO: por favor, digite um numero inteiro válido.')
+            continue
         else:
-            break
-    return numero
+            return numero
 
 
 def leiaFloat(txt):
     while True:
         try:
             numero = float(input(txt))
-        except Exception:
+        except ValueError:
             print('ERRO: por favor, digite um numero Float válido.')
+            continue
         else:
-            break
-    return numero
+            return numero
 
 
 # Programa Principal
