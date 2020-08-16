@@ -1,8 +1,8 @@
 def leiaInt(txt):
     while True:
         try:
-            numero = input(txt)
-        except Exception:
+            numero = int(input(txt))
+        except ValueError:
             print('ERRO: por favor, digite um numero inteiro válido.')
         else:
             break
