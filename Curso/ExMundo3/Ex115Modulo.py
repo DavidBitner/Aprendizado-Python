@@ -9,6 +9,7 @@ def limpar():
 def verde():
     return print('\033[32m', end='')
 
+
 def vermelho():
     return print('\033[31m', end='')
 
