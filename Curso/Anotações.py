@@ -31,7 +31,7 @@ print('Doidera em {:=^20}!'.format(nome))
 print(f'Doidera em {nome:=^20}!')
 print('{:-^40}'.format('FIM DO PROGRAMA'))
 print(f'{"FIM DO PROGRAMA":-^40}')
-print(f'FIM DO PROGRAMA'.center(40))
+print('FIM DO PROGRAMA'.center(40))
 
 """
 import math
@@ -256,7 +256,12 @@ except (ValueError, OSError):
 = Criar um bloco de comandos baseado em exceções especificas
 
 
-
+Comandos de controle de arquivo (permissões):
+'r' = Modo padrão. Abre o arquivo para ler
+'w' = Abre um arquivo para escrever no mesmo, caso o arquivo não exista, ele cria um novo.
+'x' = Cria um arquivo. Caso este já exista, a operação resulta em erro
+'a' = Abre o arquivo em modo append, para escrever novas linhas no arquivo, caso o mesmo não exista, ele cria um novo.
+'+' = Abre um arquivo para ler e escrever no mesmo.
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
