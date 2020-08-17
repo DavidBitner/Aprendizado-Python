@@ -7,5 +7,4 @@ n2 = float(input('Digite o numero do cateto adjacente: '))
 #h = sqrt(n3)
 
 h = math.hypot(n1, n2)
-
 print('A hipotenusa dos catetos {} e {} é {:.2f}'.format(n1, n2, h))
