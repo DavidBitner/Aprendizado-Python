@@ -5,14 +5,6 @@ frase = ''.join(junto)
 
 inverso = ''
 
-'''
-if frase == frase[::-1]:
-    print('A string é um palindromo')
-
-else:
-    print('A string não é um palindromo')
-'''
-
 for letra in range(len(frase) - 1, -1, -1):
     inverso = inverso + frase[letra]
 

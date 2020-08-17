@@ -2,8 +2,6 @@ n = 0
 digitados = 0
 soma = 0
 
-#n = cont = soma = 0
-
 while n != 999:
     n = int(input('Digite um numero: [999 para sair] '))
 
