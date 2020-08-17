@@ -8,9 +8,7 @@ jogos = []
 jogo = []
 numero = 0
 cont2 = 0
-
 n = int(input('Quantos jogos você quer que eu sorteie? '))
-
 for cont1 in range(0, n):
     while cont2 < 6:
         numero = randint(1, 60)
@@ -21,11 +19,9 @@ for cont1 in range(0, n):
     jogos.append(jogo[:])
     jogo.clear()
     cont2 = 0
-
 print('-=' * 5, end='')
 print(f'  Sorteando {n} jogos  ', end='')
 print('-=' * 5)
-
 for c in range(0, len(jogos)):
     print(f'Jogo {c + 1}: {jogos[c]}')
     sleep(0.5)

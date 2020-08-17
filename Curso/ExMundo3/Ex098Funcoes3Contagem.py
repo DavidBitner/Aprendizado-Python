@@ -20,13 +20,10 @@ def contagem(inicio, fim, passo):
 # Programa Principal
 contagem(1, 10, 1)
 contagem(10, 0, -2)
-
 print('Agora é sua vez de personalizar a contagem!')
 i = int(input('Inicio: '))
 f = int(input('Fim: '))
 p = int(input('Passo: '))
-
 if i > f:
     p = p * -1
-
 contagem(i, f, p)

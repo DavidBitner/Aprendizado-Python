@@ -18,9 +18,7 @@ def maior(lista):
 
 # Programa Principal
 lis = list()
-
 entrada = int(input('Quantos grupos de valores deseja analisar? '))
-
 for c1 in range(0, entrada):
     numeros = randint(1, 10)
     for c2 in range(0, numeros):

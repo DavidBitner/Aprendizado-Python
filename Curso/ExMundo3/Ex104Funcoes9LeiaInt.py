@@ -5,7 +5,6 @@ def leiaInt(numero):
             break
         else:
             print('ERRO! Digite um número inteiro válido.')
-
     return numero
 
 

@@ -8,5 +8,4 @@ def leiaDinheiro(msg):
                 numero = numero.replace(',', '.')
             numero = float(numero)
             break
-
     return numero
