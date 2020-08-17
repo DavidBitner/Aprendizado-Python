@@ -1,7 +1,6 @@
 from random import randint
 
 vitoria = 0
-
 while True:
     maquina = randint(0, 10)
     humanoEscolha = str(input('Par ou Impar? [P/I]: ')).strip()
@@ -18,7 +17,6 @@ while True:
             print('-' * 20)
             print(f'Você jogou {humanoNumero} e o computador {maquina}. Total de {resultado} DEU IMPAR')
             print('-' * 20)
-
         if humanoEscolha in 'Pp':
             if resultado % 2 == 0:
                 print('Você VENCEU!')
@@ -39,5 +37,4 @@ while True:
                 print('Você PERDEU!')
                 print('=-' * 10)
                 break
-
 print(f'GAME OVER! Você venceu {vitoria} vezes')

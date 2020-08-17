@@ -1,7 +1,5 @@
 n = int(input('Digite um numero: '))
-
 opcao = int(input('Bem vindo ao conversor de numeros!\n1 - Conversão do numero para binário\n2 - Conversão do numero para octal\n3 - Conversão do numero para hexadecimal\n\nOpção: '))
-
 if opcao == 1:
     bin = bin(n)
     print('O numero {} convertido para binário é {}'.format(n, bin[2:]))
