@@ -262,6 +262,13 @@ Comandos de controle de arquivo (permissões):
 'x' = Cria um arquivo. Caso este já exista, a operação resulta em erro
 'a' = Abre o arquivo em modo append, para escrever novas linhas no arquivo, caso o mesmo não exista, ele cria um novo.
 '+' = Abre um arquivo para ler e escrever no mesmo.
+
+
+Toda vez que um comando "open()" for chamado, inicia-lo com with para que o arquivo que está sendo aberto possa ser fechado automáticamente quando o programa sair do bloco. Exemplo:
+    with open("path/to/folder") as data:
+        do_something(data)
+        
+Ou, toda vez que o comando "open()" for iniciado, nunca esquecer de chamar o comando "close()" depois de lidar com o que foi aberto.
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
