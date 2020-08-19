@@ -263,6 +263,8 @@ Comandos de controle de arquivo (permissões):
 'a' = Abre o arquivo em modo append, para escrever novas linhas no arquivo, caso o mesmo não exista, ele cria um novo.
 '+' = Abre um arquivo para ler e escrever no mesmo.
 
+Uma classe pode sempre ser identifica pela primeira letra maiuscula, via de regra, classes sempre serão definidas com letra maiuscula para melhor visibilidade do código
+
 
 Toda vez que um comando "open()" for chamado, inicia-lo com with para que o arquivo que está sendo aberto possa ser fechado automáticamente quando o programa sair do bloco. Exemplo:
     with open("path/to/folder") as data:
