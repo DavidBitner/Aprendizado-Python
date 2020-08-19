@@ -1,3 +1,3 @@
-from ExMundo3 import Ex115Modulo
+from Curso.ExMundo3 import Ex115Modulo
 
 Ex115Modulo.menu()
