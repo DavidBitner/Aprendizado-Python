@@ -32,6 +32,7 @@ print(f'Doidera em {nome:=^20}!')
 print('{:-^40}'.format('FIM DO PROGRAMA'))
 print(f'{"FIM DO PROGRAMA":-^40}')
 print('FIM DO PROGRAMA'.center(40))
+print('Fim \"do\" programa')
 
 """
 import math
