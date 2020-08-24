@@ -1,58 +1,29 @@
 from tkinter import *
 
 
-def um():
-    e.insert(1, "1")
+def button_click(number):
+    tela = e.get()
+    e.delete(0, END)
+    e.insert(0, str(tela) + str(number))
 
 
-def dois():
-    e.insert(1, "2")
-
-
-def tres():
-    e.insert(2, "3")
-
-
-def quatro():
-    e.insert(3, "4")
-
-
-def cinco():
-    e.insert(4, "5")
-
-
-def seis():
-    e.insert(5, "6")
-
-
-def sete():
-    e.insert(6, "7")
-
-
-def oito():
-    e.insert(7, "8")
-
-
-def nove():
-    e.insert(8, "9")
-
-
-def zero():
-    e.insert(9, "0")
-
-
-def soma():
+def button_soma():
     base = e.get()
-    e.delete(2, "end")
-    return base
+    global f_num
+    f_num = int(base)
+    e.delete(0, "end")
 
 
 def clear():
     e.delete(0, "end")
 
 
-def igual():
-    e.insert(10, "=")
+def button_equal():
+    second = e.get()
+    e.delete(0, "end")
+    s_num = int(second)
+    resposta = f_num + s_num
+    e.insert(10, resposta)
 
 
 # Main
@@ -64,19 +35,19 @@ e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # Definição dos botões
-btn_um = Button(root, text="1", width=10, command=um)
-btn_dois = Button(root, text="2", width=10, command=dois)
-btn_tres = Button(root, text="3", width=10, command=tres)
-btn_quatro = Button(root, text="4", width=10, command=quatro)
-btn_cinco = Button(root, text="5", width=10, command=cinco)
-btn_seis = Button(root, text="6", width=10, command=seis)
-btn_sete = Button(root, text="7", width=10, command=sete)
-btn_oito = Button(root, text="8", width=10, command=oito)
-btn_nove = Button(root, text="9", width=10, command=nove)
-btn_zero = Button(root, text="0", width=10, command=zero)
+btn_um = Button(root, text="1", width=10, command=lambda: button_click(1))
+btn_dois = Button(root, text="2", width=10, command=lambda: button_click(2))
+btn_tres = Button(root, text="3", width=10, command=lambda: button_click(3))
+btn_quatro = Button(root, text="4", width=10, command=lambda: button_click(4))
+btn_cinco = Button(root, text="5", width=10, command=lambda: button_click(5))
+btn_seis = Button(root, text="6", width=10, command=lambda: button_click(6))
+btn_sete = Button(root, text="7", width=10, command=lambda: button_click(7))
+btn_oito = Button(root, text="8", width=10, command=lambda: button_click(8))
+btn_nove = Button(root, text="9", width=10, command=lambda: button_click(9))
+btn_zero = Button(root, text="0", width=10, command=lambda: button_click(0))
 btn_clear = Button(root, text="CLEAR", width=22, command=clear)
-btn_mais = Button(root, text="+", width=10, command=soma)
-btn_igual = Button(root, text="=", width=22, command=igual)
+btn_mais = Button(root, text="+", width=10, command=button_soma)
+btn_igual = Button(root, text="=", width=22, command=button_equal)
 
 # Colocar botões na tela
 btn_sete.grid(row=1, column=0)
