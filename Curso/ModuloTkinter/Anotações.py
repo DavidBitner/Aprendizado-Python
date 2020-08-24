@@ -23,12 +23,14 @@ Caso apenas seja necessário definir o tamanho em largura e altura, basta usar L
 Caso apenas seja necessário definir a distância da janela da esquerda e do topo da tela, basta usar +Esquerda+Topo
 
 .grid(row=0, column=0) = Para posicionar algo na tela, uma das maneiras de se fazer isso é através da função .grid, onde são apontadas as linhas e colunas do grid para posicionar os widgets do programa.
+.grid_forget() = Sempre que for necessário tirar algo da tela, usa-se esta função
 
 Button() = Função para criar um botão
 Button(state=disabled) = state serve para determinar o estado do botão, nesse caso desabilitado
 Button(padx=50, pady=50) = Determinar o tamanho do botão
 Button(command=exemplo) = Passar a função que o comando ira executar
 Button(fg="white", bg="black") = Definir a cor do que estiver dentro do botão como branca, e o background do botão como preto
+As opções de grid do Tkinter são: -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, e -sticky
 
 
 Entry() = Função para uma entrada, ou um campo de texto
@@ -38,5 +40,9 @@ exemplo.get() = Capturar o que estiver escrito no campo de texto
 exemplo.insert() = Inserir dentro do campo de texto algo assim que o programa for executado
 
 Para fazer um botão interagir com o campo de texto, basta fazer a função que o botão está executando interagir com o campo de texto
+
+button_example = Button(root, text="example", command=lambda: button_click(0))
+= Toda vez que um parâmetro for passado através de um botão, o comando deverá começar com Lambda.
+
 
 '''
