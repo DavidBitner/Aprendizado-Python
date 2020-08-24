@@ -9,20 +9,56 @@ def button_click(number):
 
 def button_soma():
     base = e.get()
-    global f_num
-    f_num = int(base)
-    e.delete(0, "end")
+    global soma_num
+    global escolha
+    soma_num = int(base)
+    escolha = "soma"
+    e.delete(0, END)
+
+
+def button_subtracao():
+    base = e.get()
+    global subtracao_num
+    global escolha
+    subtracao_num = int(base)
+    escolha = "subtracao"
+    e.delete(0, END)
+
+
+def button_divisao():
+    base = e.get()
+    global divisao_num
+    global escolha
+    divisao_num = int(base)
+    escolha = "divisao"
+    e.delete(0, END)
+
+
+def button_multiplicacao():
+    base = e.get()
+    global multiplicacao_num
+    global escolha
+    multiplicacao_num = int(base)
+    escolha = "multiplicacao"
+    e.delete(0, END)
 
 
 def clear():
-    e.delete(0, "end")
+    e.delete(0, END)
 
 
 def button_equal():
     second = e.get()
     e.delete(0, "end")
-    s_num = int(second)
-    resposta = f_num + s_num
+    second_num = int(second)
+    if escolha in "soma":
+        resposta = soma_num + second_num
+    elif escolha in "subtracao":
+        resposta = subtracao_num - second_num
+    elif escolha in "multiplicacao":
+        resposta = multiplicacao_num * second_num
+    elif escolha in "divisao":
+        resposta = divisao_num / second_num
     e.insert(10, resposta)
 
 
@@ -47,6 +83,9 @@ btn_nove = Button(root, text="9", width=10, command=lambda: button_click(9))
 btn_zero = Button(root, text="0", width=10, command=lambda: button_click(0))
 btn_clear = Button(root, text="CLEAR", width=22, command=clear)
 btn_mais = Button(root, text="+", width=10, command=button_soma)
+btn_subtracao = Button(root, text="-", width=10, command=button_subtracao)
+btn_divisao = Button(root, text="/", width=10, command=button_divisao)
+btn_multiplicacao = Button(root, text="*", width=10, command=button_multiplicacao)
 btn_igual = Button(root, text="=", width=22, command=button_equal)
 
 # Colocar botões na tela
@@ -61,7 +100,10 @@ btn_dois.grid(row=3, column=1)
 btn_tres.grid(row=3, column=2)
 btn_zero.grid(row=4, column=0)
 btn_clear.grid(row=4, column=1, columnspan=2)
-btn_mais.grid(row=5, column=0)
-btn_igual.grid(row=5, column=1, columnspan=2)
+btn_divisao.grid(row=5, column=0)
+btn_multiplicacao.grid(row=5, column=1)
+btn_subtracao.grid(row=5, column=2)
+btn_mais.grid(row=6, column=0)
+btn_igual.grid(row=6, column=1, columnspan=2)
 
 root.mainloop()
