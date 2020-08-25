@@ -35,6 +35,13 @@ print('FIM DO PROGRAMA'.center(40))
 print('Fim \"do\" programa')
 
 """
+
+A, B, C = input().split(" ")
+D, E, F = input().split(" ")
+code1, unit1, value1 = A, B, C
+code2, unit2, value2 = D, E, F
+= Caso seja necessário coletar mais de uma informação por linha, deve-se primeiro inputar as linhas com variáveis base separadas por virgulas e com um .split(), depois atribuir as palavras nas linhas as variáveis que serão usadas
+
 import math
 raiz = math.sqrt(num)
 print('A raiz de {} é igual a {:.2f}'.format(num, raiz))
