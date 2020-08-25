@@ -1,0 +1,10 @@
+code_product_1, units_product_1, price_product_1 = input().split(" ")
+code_product_2, units_product_2, price_product_2 = input().split(" ")
+code_product_1 = int(code_product_1)
+units_product_1 = int(units_product_1)
+price_product_1 = float(price_product_1)
+code_product_2 = int(code_product_2)
+units_product_2 = int(units_product_2)
+price_product_2 = float(price_product_2)
+total = units_product_1 * price_product_1 + units_product_2 * price_product_2
+print("VALOR A PAGAR: R$ {:.2f}".format(total))
