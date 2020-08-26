@@ -45,7 +45,7 @@ code2, unit2, value2 = D, E, F
 import math
 raiz = math.sqrt(num)
 print('A raiz de {} é igual a {:.2f}'.format(num, raiz))
-print('A raiz de {} é igual a {:.2f}'.format(num, maath.ceil(raiz)))
+print('A raiz de {} é igual a {:.2f}'.format(num, math.ceil(raiz)))
 from math import sqrt, floor
 raiz = sqrt(num)
 print('A raiz de {} é igual a {:.2f}'.format(num, floor(raiz))
