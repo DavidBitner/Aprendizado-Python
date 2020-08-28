@@ -50,4 +50,12 @@ sticky=W+E = Expandir algo a direita e esquerda
 anchor=E = Fazer algo se alocado a direita da base
 
 
+frame = LabelFrame(root, text="This is my frame...", padx=5, pady=5)
+frame.pack(padx=100, pady=100)
+= padx e pady dentro do frame significa que o padding ficara dentro do frame. padx e pady no frame.pack significa que o padding ficara ao redor do frame
+
+Usando frames, pode-se misturar alinhamentos, .pack pode ser usado para o frame em si, e grid para os itens dentro do frame
+
+
+
 '''
