@@ -7,7 +7,7 @@ def clicked():
         my_label = Label(frame, text="INVALID")
     else:
         my_label = Label(frame, text=f"     {r}      ")
-    my_label.grid(row=7, column=0)
+    my_label.grid(row=len(radios) + 2, column=0)
 
 
 root = Tk()
@@ -27,6 +27,6 @@ my_button = Button(frame, text="CLICK ME", padx=5, pady=5, command=clicked)
 
 for c in range(0, len(radios)):
     radios[c].grid(row=c, column=0, sticky=W + E)
-my_button.grid(row=6, column=0, padx=50, pady=50)
+my_button.grid(row=len(radios) + 1, column=0, padx=50, pady=50)
 
 root.mainloop()
