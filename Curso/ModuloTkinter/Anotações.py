@@ -45,4 +45,9 @@ button_example = Button(root, text="example", command=lambda: button_click(0))
 = Toda vez que um parâmetro for passado através de um botão, o comando deverá começar com Lambda.
 
 
+relief=SUNKEN = Afundar algo
+sticky=W+E = Expandir algo a direita e esquerda
+anchor=E = Fazer algo se alocado a direita da base
+
+
 '''
