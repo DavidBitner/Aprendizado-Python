@@ -41,6 +41,7 @@ my_img2 = ImageTk.PhotoImage(Image.open("Aula009Imagem2.jpg"))
 my_img3 = ImageTk.PhotoImage(Image.open("Aula009Imagem3.jpg"))
 my_img4 = ImageTk.PhotoImage(Image.open("Aula009Imagem4.jpg"))
 image_list = [my_img1, my_img2, my_img3, my_img4]
+
 my_label = Label(image=image_list[atual])
 status_label = Label(root, text=f"Imagem {atual + 1} de {len(image_list)}", bd=1, relief=SUNKEN, anchor=E)
 
