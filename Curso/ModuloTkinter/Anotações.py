@@ -57,5 +57,31 @@ frame.pack(padx=100, pady=100)
 Usando frames, pode-se misturar alinhamentos, .pack pode ser usado para o frame em si, e grid para os itens dentro do frame
 
 
+Para criar popups, ou novas janelas em um programa, se usa o comando messagebox.
+from tkinter import messagebox
+
+messagebox.showinfo("Titulo da janela","Mensagem dentro do popup")
+= popup para apenas mostrar informações através do popup
+
+messagebox.showwarning("Titulo da janela","Mensagem dentro do popup")
+= popup de alerta
+
+messagebox.showerror("Titulo da janela","Mensagem dentro do popup")
+= popup de erro
+
+messagebox.askquestion("Titulo da janela","Mensagem dentro do popup")
+= popup com opções de sim e não
+
+messagebox.showinfo("Titulo da janela","Mensagem dentro do popup")
+= popup com opções de ok ou cancelar
+
+messagebox.askyesno("Titulo da janela","Mensagem dentro do popup")
+= popup para perguntar sim ou não
+
+exemplo = messagebox.askyesno("Titulo da janela","Mensagem dentro do popup")
+= Para manipular o botão que foi apertado no popup basta atribuir o comando messagebox a uma variável.
+
+
+janela = Toplevel() = Criar uma nova janela chamada janela
 
 '''
