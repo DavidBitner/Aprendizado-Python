@@ -18,7 +18,7 @@ janela.mainloop() = Para fazer o comando funcionar, sempre haverá o comando mai
 
 .title() = Para atribuir um titulo a uma janela usa-se o comando
 janela['bg'] = 'green' = Para atribuir uma cor de background para uma janela, usa-se a propriedade "bg".
-.geometr()00x300+100+100) = Para atribuir a posição de algo usa-se o comando . Tendo como lógica LarguraxAltura+Esquerda+Topo.
+.geometry(300x300+100+100) = Para atribuir a posição de algo usa-se o comando . Tendo como lógica LarguraxAltura+Esquerda+Topo.
 Caso apenas seja necessário definir o tamanho em largura e altura, basta usar LarguraxAltura.
 Caso apenas seja necessário definir a distância da janela da esquerda e do topo da tela, basta usar +Esquerda+Topo
 
@@ -83,5 +83,18 @@ exemplo = messagebox.askyesno("Titulo da janela","Mensagem dentro do popup")
 
 
 janela = Toplevel() = Criar uma nova janela chamada janela
+
+
+slider = Scale(root).pack = Para criar sliders usa-se a classe Scale
+Scale(root, orient=HORIZONTAL) = Para colocar um slider na horizontal usa-se orient=HORIZONTAL
+
+
+var = StringVar() OU var = IntVar()
+= Sempre que se for usar as checkboxes, precisa-se antes de atribuir a uma variável o tipo de retorno da check box.
+
+checkbox = Checkbutton(root, variable=var) = Para criar check boxes usa-se a classe Checkbutton
+
+checkbox = Checkbutton(root, variable= var, onvalue="On", offvalue="Off")
+= Para definir o retorno para variável da checkbox, usa-se os parametros onvalue e offvalue
 
 '''
