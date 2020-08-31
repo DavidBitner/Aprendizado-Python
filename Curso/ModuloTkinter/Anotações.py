@@ -97,4 +97,12 @@ checkbox = Checkbutton(root, variable=var) = Para criar check boxes usa-se a cla
 checkbox = Checkbutton(root, variable= var, onvalue="On", offvalue="Off")
 = Para definir o retorno para variável da checkbox, usa-se os parametros onvalue e offvalue
 
+
+clicked = StringVar()
+drop = OptionMenu(root, clicked, *lista)
+= Usa-se a classe OptionMenu para determinar algo como dropdown.
+= As opções que apareceram no dropdown podem ser definidas em uma lista, basta colocar um * antes da lista para mostrar o dropdown da maneira correta
+= Para usar o item selecionado no dropdown basta usar a variável atribuida, neste caso "clicked"
+
+
 '''
