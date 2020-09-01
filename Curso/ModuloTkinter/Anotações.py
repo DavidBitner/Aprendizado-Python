@@ -105,4 +105,17 @@ drop = OptionMenu(root, clicked, *lista)
 = Para usar o item selecionado no dropdown basta usar a variável atribuida, neste caso "clicked"
 
 
+import sqlite3 = Pacote basico nativo Python para mexer com databases
+
+nome = sqlite3.connect("nome_do_banco.db")
+= Comando para criar ou conectar a um banco de dados
+
+cursor = nome.cursor()
+= Criar um cursor para lidar com o banco de dados. Sempre que um comando for dado em sql, o cursor servirá para realizar os comandos
+
+cursor.execute("COMANDOS SQL")
+= Execução de código SQL
+
+
+
 '''
