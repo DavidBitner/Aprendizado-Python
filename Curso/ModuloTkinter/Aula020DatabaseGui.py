@@ -4,6 +4,7 @@ import sqlite3
 
 # Criar função para enviar os dados para a tabela do banco
 def enviar():
+    # Conectar com o banco
     conexao = sqlite3.connect("Aula019...Banco.db")
     cursor = conexao.cursor()
 
@@ -16,6 +17,8 @@ def enviar():
         "estado": estado.get(),
         "cep": cep.get()
     })
+
+    # Fechar conexão com o banco
     conexao.commit()
     conexao.close()
 
@@ -30,6 +33,7 @@ def enviar():
 
 # Criar função para mostrar os dados da tabela na tela
 def mostrar():
+    # Conectar ao banco
     conexao = sqlite3.connect("Aula019...Banco.db")
     cursor = conexao.cursor()
 
@@ -42,6 +46,7 @@ def mostrar():
     mostrar_label = Label(root, text=mostrar_informacoes)
     mostrar_label.grid(row=8, column=0, columnspan=2)
 
+    # Fechar conexão com o banco
     conexao.commit()
     conexao.close()
 
@@ -62,7 +67,6 @@ endereco_label = Label(root, text="Endereço", anchor=W)
 cidade_label = Label(root, text="Cidade", anchor=W)
 estado_label = Label(root, text="Estado", anchor=W)
 cep_label = Label(root, text="CEP", anchor=W)
-
 p_nome_label.grid(row=0, column=0, sticky=W + E)
 sobrenome_label.grid(row=1, column=0, sticky=W + E)
 endereco_label.grid(row=2, column=0, sticky=W + E)
@@ -77,7 +81,6 @@ endereco = Entry(root, width=30)
 cidade = Entry(root, width=30)
 estado = Entry(root, width=30)
 cep = Entry(root, width=30)
-
 p_nome.grid(row=0, column=1, padx=20)
 sobrenome.grid(row=1, column=1)
 endereco.grid(row=2, column=1)
