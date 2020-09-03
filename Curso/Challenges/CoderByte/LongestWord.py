@@ -13,5 +13,5 @@ def LongestWord(sen):
     return sen
 
 
-# keep this function call here
+# Main
 print(LongestWord(input()))

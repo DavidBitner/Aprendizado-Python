@@ -5,9 +5,8 @@ def CodelandUsernameValidation(strParam):
         strParam = "true"
     else:
         strParam = "false"
-    # code goes here
     return strParam
 
 
-# keep this function call here
+# Main
 print(CodelandUsernameValidation(input()))
