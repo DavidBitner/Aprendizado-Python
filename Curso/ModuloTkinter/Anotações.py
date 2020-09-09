@@ -117,5 +117,9 @@ cursor.execute("COMANDOS SQL")
 = Execução de código SQL
 
 
+example(font=("Helvetica", 20))
+= Para mudar a fonte e o tamanho da mesma usa-se este método
+
+
 
 '''
