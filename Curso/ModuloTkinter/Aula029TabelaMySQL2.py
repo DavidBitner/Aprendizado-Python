@@ -16,7 +16,7 @@ my_cursor = my_db.cursor()
 
 # Ver se o banco de dados foi criado
 my_cursor.execute("SHOW DATABASES")
-for db in my_cursor:
-    print(db)
+for banco_de_dados in my_cursor:
+    print(banco_de_dados)
 
 root.mainloop()
