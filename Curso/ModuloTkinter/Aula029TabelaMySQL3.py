@@ -16,6 +16,11 @@ my_db = mysql.connector.connect(
 my_cursor = my_db.cursor()
 
 # Criar tabela
-my_cursor.execute("CREATE TABLE clientes(first_name VARCHAR(255), last_name VARCHAR(255), zipcode INT(10), price_paid DECIMAL(10, 2), user_id INT AUTO_INCREMENT PRIMARY KEY)")
+my_cursor.execute("CREATE TABLE clientes("
+                  "first_name VARCHAR(255), "
+                  "last_name VARCHAR(255), "
+                  "zipcode INT(10), "
+                  "price_paid DECIMAL(10, 2), "
+                  "user_id INT AUTO_INCREMENT PRIMARY KEY)")
 
 root.mainloop()
