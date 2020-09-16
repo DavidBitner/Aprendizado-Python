@@ -23,7 +23,8 @@ my_cursor.execute("ALTER TABLE clientes CHANGE zipcode cep INT(10)")
 my_cursor.execute("ALTER TABLE clientes CHANGE price_paid valor_pago DECIMAL(10, 2)")
 
 # Ver se a tabela foi modificada corretamente
-my_cursor.execute("SELECT * FROM clientes")
+comando_sql = "SELECT * FROM clientes"
+my_cursor.execute(comando_sql)
 for coisa in my_cursor.description:
     print(coisa)
 

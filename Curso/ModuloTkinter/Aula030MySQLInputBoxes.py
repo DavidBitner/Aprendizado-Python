@@ -17,16 +17,17 @@ my_db = mysql.connector.connect(
 my_cursor = my_db.cursor()
 
 # Adicionar colunas a tabela
-my_cursor.execute("ALTER TABLE clientes ADD ("
-                  "email VARCHAR(255),"
-                  "endereco_1 VARCHAR(255),"
-                  "endereco_2 VARCHAR(255),"
-                  "cidade VARCHAR(50),"
-                  "estado VARCHAR(50),"
-                  "pais VARCHAR(255),"
-                  "telefone VARCHAR(255),"
-                  "tipo_de_pagamento VARCHAR(50),"
-                  "desconto VARCHAR(255))")
+comando_sql = "ALTER TABLE clientes ADD (" \
+              "email VARCHAR(255)," \
+              "endereco_1 VARCHAR(255)," \
+              "endereco_2 VARCHAR(255)," \
+              "cidade VARCHAR(50)," \
+              "estado VARCHAR(50)," \
+              "pais VARCHAR(255)," \
+              "telefone VARCHAR(255)," \
+              "tipo_de_pagamento VARCHAR(50)," \
+              "desconto VARCHAR(255))"
+my_cursor.execute(comando_sql)
 
 # Ver se a tabela foi criada corretamente
 my_cursor.execute("SELECT * FROM clientes")

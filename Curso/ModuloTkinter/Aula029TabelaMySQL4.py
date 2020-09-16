@@ -16,7 +16,8 @@ my_db = mysql.connector.connect(
 my_cursor = my_db.cursor()
 
 # Ver se a tabela foi criada
-my_cursor.execute("SELECT * FROM clientes")
+comando_sql = "SELECT * FROM clientes"
+my_cursor.execute(comando_sql)
 for coisa in my_cursor.description:
     print(coisa)
 

@@ -15,6 +15,7 @@ my_db = mysql.connector.connect(
 my_cursor = my_db.cursor()
 
 # Criar banco de dados
-my_cursor.execute("CREATE DATABASE doidera")
+comando_sql = "CREATE DATABASE doidera"
+my_cursor.execute(comando_sql)
 
 root.mainloop()

@@ -15,7 +15,8 @@ my_db = mysql.connector.connect(
 my_cursor = my_db.cursor()
 
 # Ver se o banco de dados foi criado
-my_cursor.execute("SHOW DATABASES")
+comando_sql = "SHOW DATABASES"
+my_cursor.execute(comando_sql)
 for banco_de_dados in my_cursor:
     print(banco_de_dados)
 
