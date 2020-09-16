@@ -42,7 +42,7 @@ def adicionar_cliente():
 
 # Função do botão de exportar tabela para o Excel
 def exportar_para_excel(resultado):
-    with open("clientes.csv", "w") as tabela:
+    with open("Aula028...MySQL.csv", "w") as tabela:
         escrever = csv.writer(tabela, dialect='excel')
         for coisa in resultado:
             escrever.writerow(coisa)
