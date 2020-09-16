@@ -50,6 +50,7 @@ def exportar_para_excel(resultado):
 
 # Função do botão listar clientes
 def listar_clientes():
+    global i
     listar_clientes_window = Tk()
     listar_clientes_window.title("Listar Clientes")
     listar_clientes_window.geometry("800x600")
@@ -65,10 +66,10 @@ def listar_clientes():
             cliente_label.grid(row=i + 1, column=coluna)
             coluna += 1
 
-        # Opção de exportar tabela para o Excel
-        excel_btn = Button(listar_clientes_window, text="EXPORTAR PARA EXCEL", height=2, width=20,
-                           command=lambda: exportar_para_excel(resultado))
-        excel_btn.grid(row=i + 2, column=0, columnspan=14)
+    # Opção de exportar tabela para o Excel
+    excel_btn = Button(listar_clientes_window, text="EXPORTAR PARA EXCEL", height=2, width=20,
+                       command=lambda: exportar_para_excel(resultado))
+    excel_btn.grid(row=i + 2, column=0, columnspan=14)
 
 
 # Main
