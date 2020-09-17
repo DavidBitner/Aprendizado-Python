@@ -121,5 +121,7 @@ example(font=("Helvetica", 20))
 = Para mudar a fonte e o tamanho da mesma usa-se este método
 
 
+myLabel.winfo_exists() == 1:
+= Pode-se usar o comando acima para verificar se algo se encontra na tela, podendo assim determinar o que acontecerá caso exista ou não exista na tela algo
 
 '''
