@@ -291,4 +291,10 @@ print('Olá {}{}{}!!!'.format('\033[4;34m', nome, '\033[m'))
         break
 
 if continuar in 'Nn':
-    break'''
+    break
+    
+
+pyinstaller.exe --onefile --windowed ProgramName.py
+= Criar arquivo .exe de algum arquivo
+
+'''
