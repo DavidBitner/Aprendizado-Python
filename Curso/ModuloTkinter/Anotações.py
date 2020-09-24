@@ -124,4 +124,40 @@ example(font=("Helvetica", 20))
 myLabel.winfo_exists() == 1:
 = Pode-se usar o comando acima para verificar se algo se encontra na tela, podendo assim determinar o que acontecerá caso exista ou não exista na tela algo
 
+
+Para fazer com que um comando do teclado ou especifico do mouse funcione dentro do tkinter:
+Primeiro se define o widget, nesse caso um botão
+Segundo se utiliza o comando "bind" para determinar a ação desejada
+Dentro do comando bind, entre aspas e entre os sinais de maior e menor é onde será depositado o comando em si
+Ainda dentro do comando bind, deve-se apontar a função que executa o comando, nesse caso "click"
+Terceiro, deve-se determinar a função em si para executar o comando
+Dentro dos parênteses da função deve-se escrever "event"
+E a função em si é como qualquer outra, com a diferença que ela será ativada com base no comando depositado dentro de bind
+my_btn = Button(root, text="CLICK ME", command=click)
+my_btn.bind("<>", click)
+def click(event):
+
+Alguns dos comandos que podem ser colocados dentro de .bind("<>")
+.bind("<Button-1>") = Botão esquerdo do mouse
+.bind("<Button-2>") = Botão do meio
+.bind("<Button-3>") = Botão direito
+.bind("<ButtonPress-1>") = Mesmo comando de Button-1
+.bind("<1>") = Mesmo comando de Button-1
+.bind("<B1-Motion>") = O mouse em movimento com o botão 1 sendo pressionado
+.bind("<ButtonRelease-1>") = O botão esquerdo do mouse sendo solto
+.bind("<Double-Button-1>") = O botão esquerdo foi pressionado duas vezes
+.bind("<Enter>") = Quando o ponteiro do mouse entra no widget
+.bind("<Leave>") = Quando o ponteiro do mouse sai do widget
+.bind("<FocusIn>") = Quando o foco do teclado for movido para o widget
+.bind("<FocusOut>") = Quando o foco do teclado for movido para fora do widget
+.bind("<Return>") = Quando a tecla Enter do teclado for pressionada
+.bind("<Cancel>") = Quando a tecla Break for pressionada
+.bind("<Key>") = Quando qualquer tecla do teclado for pressionada
+.bind("<Shift-Up>") = Quando a tecla up do teclado for pressionada enquanto segura o shift
+Pode-se usar além de Return para tecla enter e Cancel para a tecla break, os seguintes comandos de teclas:
+BackSpace, Tab, Shift_L, Control_L, Alt_L, Pause, Caps_Lock, Escape, Prior (Page Up), Next(Page Down), End, Home, Left,
+Up, Right, Down, Print, Insert, Delete, Num_Lock, Scroll_Lock, F1, F2, F3, F4...
+No caso de Shift-Up, pode-se usar Alt, Shift e Control para definir como tecla pressionada
+
+
 '''
