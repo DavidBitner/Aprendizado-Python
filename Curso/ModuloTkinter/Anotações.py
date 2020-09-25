@@ -160,4 +160,20 @@ Up, Right, Down, Print, Insert, Delete, Num_Lock, Scroll_Lock, F1, F2, F3, F4...
 No caso de Shift-Up, pode-se usar Alt, Shift e Control para definir como tecla pressionada
 
 
+my_menu = Menu(root)
+root.config(menu=my_menu)
+= O nome dos menus sera my_menu, ele está ancorado a root. Configurando o menu de root como my_menu
+
+file_menu = Menu(my_menu)
+= Dando o nome de file_menu, para uma nova opção da barra de menus
+
+my_menu.add_cascade(Label="File", menu=file_menu)
+= Adicionando a opção File a barra de menus com o nome de file_menu
+
+file_menu.add_command(Label="New", command=command)
+= Adicionando a opção New ao dropdown file_menu na barra de menus
+
+file_menu.add_separator()
+= Adicionando um separador ao dropdown file_menu na barra de menus
+
 '''
