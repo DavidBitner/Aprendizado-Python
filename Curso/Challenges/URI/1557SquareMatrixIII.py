@@ -13,7 +13,7 @@ while True:
         dados.clear()
         bResposta *= 2
         resposta = bResposta
-    doidera = str(matriz[n-1][n-1])
+    doidera = str(matriz[n - 1][n - 1])
     numero = len(doidera)
     for linha in range(0, len(matriz)):
         for coluna in range(0, len(matriz)):
