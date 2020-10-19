@@ -1,0 +1,36 @@
+Básico:
+r = requests.get('https://google.com')
+
+Para mostrar o conteúdo de r:
+print(r)
+
+Para mostrar os atributos e métodos de r:
+print(dir(r))
+
+Para mostrar os atributos e métodos de r de uma maneira bem detalhada:
+print(help(r))
+
+
+Para salvar uma imagem com requests, deve-se ter o link da imagem, e através do comando content criar um arquivo com a
+extensão desejada para armazenar a imagem:
+
+Fazendo o request e dando o nome de "r" para ele:
+r = requests.get('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png')
+
+Criando o arquivo de irá armazenar a imagem, sendo o nome do arquivo "imagem.png", dando permissão para a função criar
+o arquivo através de "wb", dando o nome para a imagem dentro do código de "f" e por ultimo usando o comando write
+para efetivamente montar a imagem através dos bytes gerados pelo comando content:
+with open('imagem.png', 'wb') as f:
+    f.write(r.content)
+
+
+Para saber se o request funcionou, usa-se o comando status_code:
+status = r.status_code
+
+Tendo o resultado do comando status_code depositado dentro da variável "status", pode-se fazer com essa informação o
+que for necessário.
+
+Se a resposta for 200: Significa que o request foi um sucesso
+Se a resposta for 300: Significa que o request gerou um redirecionamento
+Se a resposta for 400: Significa que há um erro ao executar o request, do lado do usuário, como problemas de permissão
+Se a resposta for 500: Significa que há um erro do lado do server, como um crash no site
