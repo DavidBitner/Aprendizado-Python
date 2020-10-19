@@ -19,6 +19,9 @@
  Porcentagens podem ser calculadas da seguinte forma: valor * porcentagem / 100
  Para conseguir o valor menos a porcentagem: valor - (valor * porcentagem / 100)
 
+MÓDULO = Qualquer arquivo python, exemplo.py
+Pacote = Conjunto de módulos
+
 """
 
 nome = input('Qual o seu nome?')
