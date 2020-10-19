@@ -1,7 +1,6 @@
-'''
 TkInter = TK Interface
 TkInter é uma biblioteca gráfica nativa do Python
-A bibliotexa é um binding, ou seja, a biblioteca vem com o Python, mas não faz parte do desenvolvimento Python
+A biblioteca é um binding, ou seja, a biblioteca vem com o Python, mas não faz parte do desenvolvimento Python
 GUI = Graphic User Interface
 widget = todo componente que compõe uma interface gráfica, como botões, botões de opção, campos de texto, janelas e rótulos de texto.
 container = um widget que pode conter outros widgets. Todo container também está contido em outro container, salvo a janela principal
@@ -176,4 +175,3 @@ file_menu.add_command(Label="New", command=command)
 file_menu.add_separator()
 = Adicionando um separador ao dropdown file_menu na barra de menus
 
-'''
