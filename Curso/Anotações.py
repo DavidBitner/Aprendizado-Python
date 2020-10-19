@@ -21,7 +21,14 @@
 
 MÓDULO = Qualquer arquivo python, exemplo.py
 Pacote = Conjunto de módulos
-
+Objeto = Qualquer informação com estado (atributos ou valores) e comportamento definido (metodos)
+Classe = A classe é basicamente um objeto criado pelo usuário, que pode ser usado em novas instâncias.
+Instância = Um objeto individual de uma certa classe. Por exemplo, um objeto obj que pertence a classe Circulo, é uma instância da classe Circulo
+Variável = É um container para depositar informações. Por exemplo, x = 5, x é a variável enquanto 5 é a informação
+Função = Uma função é um bloco de código que funciona apenas quando é solicitado
+Atributo = Uma variável que está dentro de uma instância ou classe
+Método = Uma função que está dentro de uma instância ou classe
+Herança = A transferência de caracteristicas de uma classe para outras que são herdadas da primeira
 """
 
 nome = input('Qual o seu nome?')
