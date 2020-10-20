@@ -1,0 +1,50 @@
+Comandos de controle de arquivo (permissões):
+'r' = Modo padrão. Abre o arquivo para ler
+'w' = Abre um arquivo para escrever no mesmo, caso o arquivo não exista, ele cria um novo.
+'x' = Cria um arquivo. Caso este já exista, a operação resulta em erro
+'a' = Abre o arquivo em modo append, para escrever novas linhas no arquivo, caso o mesmo não exista, ele cria um novo.
+'+' = Abre um arquivo para ler e escrever no mesmo.
+
+Toda vez que um comando "open()" for chamado, inicia-lo com with para que o arquivo que está sendo aberto possa ser fechado automáticamente quando o programa sair do bloco. Exemplo:
+    with open("path/to/folder") as data:
+        do_something(data)
+
+with open('test.txt', 'w') as f:
+    pass
+= Criar um arquivo de texto com o nome de test, caso esse arquivo já exista, ele irá sobrescrever este arquivo
+
+with open('test.txt', 'r') as f:
+    f_contents = f.read()
+    print(f_contents)
+= Abrir o arquivo de texto com o nome test, atribuir a uma variável o seu conteúdo através do comando read()
+e printar esse conteúdo na tela
+
+with open('test.txt', 'r') as f:
+    f_contents = f.readlines()
+= f_contents vai ser uma lista com cada uma das linhas sendo um valor desta lista
+
+with open('test.txt', 'r') as f:
+    f_contents = f.readline()
+= f_contents vai conter o conteúdo da primeira linha do arquivo de texto, e caso sejam feitos mais comandos readline()
+os próximos comandos iram depositar a variável as próximas linhas do arquivo de texto
+
+with open('test.txt', 'r') as f:
+    for line in f:
+        print(line, end="")
+= Através do loop for o arquivo de texto irá ser percorrido linha por linha
+
+with open('test.txt', 'r') as f:
+    f_contents = f.read(100)
+= Armazenar em uma variável os 100 primeiros caracteres do documento
+
+with open('test.txt', 'r') as f:
+    quantidade_caracteres = 5
+    content = f.read(quantidade_caracteres)
+    print(f.tell())
+= O comando tell() serve para apontar em que posição do documento o script se encontra
+
+with open('test.txt', 'r') as f:
+    quantidade_caracteres = 5
+    content = f.read(quantidade_caracteres)
+    f.seek()
+= O comando seek() vai forçar o script a retornar para o ponto desejado
