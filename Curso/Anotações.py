@@ -274,21 +274,29 @@ except (ValueError, OSError):
 = Criar um bloco de comandos baseado em exceções especificas
 
 
-Comandos de controle de arquivo (permissões):
-'r' = Modo padrão. Abre o arquivo para ler
-'w' = Abre um arquivo para escrever no mesmo, caso o arquivo não exista, ele cria um novo.
-'x' = Cria um arquivo. Caso este já exista, a operação resulta em erro
-'a' = Abre o arquivo em modo append, para escrever novas linhas no arquivo, caso o mesmo não exista, ele cria um novo.
-'+' = Abre um arquivo para ler e escrever no mesmo.
-
-Uma classe pode sempre ser identifica pela primeira letra maiuscula, via de regra, classes sempre serão definidas com letra maiuscula para melhor visibilidade do código
+num1 = 10000000000 == num1 = 10_000_000_000
+= Quando estiver trabalhando com numeros grandes em Python, pode-se usar underlines neles para melhor identificar o numero
 
 
-Toda vez que um comando "open()" for chamado, inicia-lo com with para que o arquivo que está sendo aberto possa ser fechado automáticamente quando o programa sair do bloco. Exemplo:
-    with open("path/to/folder") as data:
-        do_something(data)
-        
-Ou, toda vez que o comando "open()" for iniciado, nunca esquecer de chamar o comando "close()" depois de lidar com o que foi aberto.
+for index, name in enumerate(names, start=1):
+    print(index, name)
+= Quando for necessário usar tanto uma informação que está dentro de uma lista quanto um valor de index para saber a posição dessa informação, usa-se este método
+
+for name, hero in zip(names, heroes):
+    print(f'{name} is actually {hero}')
+= Quando for necessário passar por duas listas ao mesmo tempo em um unico for, usa-se o comando zip
+
+
+a, _ = (1, 2) = Caso seja necessário desempacotar (unpack) uma lista em variáveis, mas sem a necessidade de usar um dos itens na lista, usa-se o _ para avisar a IDE que você não pretende usar aquela variável
+a, b, *c = (1, 2, 3, 4, 5) = Dar a variável a o numero 1, a variável b o numero 2 e a variável c uma lista com o restante dos numeros
+a, b, *_ = (1, 2, 3, 4, 5) = Dar a variável a o numero 1, a b o numero 2 e ignorar o restante dos numeros
+
+
+from getpass import getpass
+username = input(username: )
+password = getpass(password:)
+= Quando for necessário um input secreto, que não deva aparecer na tela do usuário, usa-se getpass
+
 """
 
 print('\033[4;30;45mOlá, Mundo!\033[m')
