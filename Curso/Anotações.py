@@ -315,4 +315,10 @@ if continuar in 'Nn':
 pyinstaller.exe --onefile --windowed ProgramName.py
 = Criar arquivo .exe de algum arquivo
 
+
+def limpar_tela():
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
+= Limpar a tela do terminal
+
 '''
